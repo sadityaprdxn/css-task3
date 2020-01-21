@@ -115,17 +115,17 @@ header>div{
   position: relative;
 }
 
-nav{
+header nav{
   width: 47.8%;
   margin-top: 7px;
 }
 
-nav ul{
+header nav ul{
   display: flex;
   justify-content: space-between;
 }
 
-nav a{
+header nav a{
   font-size: 0.625rem;
   color: #373737;
   text-transform: uppercase;
@@ -147,8 +147,6 @@ header>div a:nth-child(3) .fa-bookmark{
   margin-left: 6.8px;
   color: #A0C63F;
 }
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -156,6 +154,7 @@ header>div a:nth-child(3) .fa-bookmark{
 /*=================================
   main styling starts here
 =================================*/
+/* slider section start */
 .slider{
   background-color:  #A0C63F;
   position: relative;
@@ -182,7 +181,6 @@ header>div a:nth-child(3) .fa-bookmark{
   font-size: 24px;
   text-transform: uppercase;
   color: #F8F8F8;
-  /* text-shadow: 0px 1px rgba(0,0,0,0.1); */
   text-shadow: 1px 0 1px rgba(0,0,0,0.3);
   text-align: center;
   line-height: 33px;
@@ -211,7 +209,6 @@ header>div a:nth-child(3) .fa-bookmark{
   align-items: center;
   justify-content: center;
   left: 81px;
-  padding-bottom: 1.5px;
   padding-top: 1.5px;
   padding-right: 3px;
 }
@@ -221,12 +218,12 @@ header>div a:nth-child(3) .fa-bookmark{
   align-items: center;
   justify-content: center;
   right: 81px;
-  padding-bottom: 1.5px;
   padding-top: 1.5px;
   padding-left: 3px;
 }
+/* slider section end */
 
-
+/* welcome section start */
 h2{
   font-size: 27px;
   text-transform: uppercase;
@@ -280,7 +277,9 @@ h2 span{
   padding-top: 2px;
   letter-spacing: 1px;
 }
+/* welcome section end */
 
+/* portfolio section start */
 .portfolio{
   margin-bottom: 19px;
 }
@@ -350,7 +349,9 @@ article ul li:nth-child(3){
   color: #373737;
   line-height: 14.5px;
 }
+/* portfolio section end */
 
+/* advertisment section start */
 .advertisment{
   padding-bottom: 42px;
   border-bottom: 1px solid #E1E1E1;
@@ -391,6 +392,7 @@ article ul li:nth-child(3){
   border-radius: 50%;
   color: #FFFFFF;
 }
+/* advertisment section end */
 
 /*=================================
   main styling ends here
@@ -399,23 +401,194 @@ article ul li:nth-child(3){
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
 footer{
   background-color: #FFFFFF;
+  padding-top: 25px;
+}
+
+h6{
+  text-transform: uppercase;
+  font-size: 14.8px;
+  color: #373737;
+  margin-top: 8px;
+  margin-bottom: 15px
+}
+
+footer>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-us,
+.archives,
+.contact-us,
+form{
+  width: 23%;
+}
+
+.about-us li,
+.archives li,
+.contact-us li{
+  display: block;
+  font-size: 10px;
+  color: #373737;
+  line-height: 15px;
+}
+
+.archives li a,
+.contact-us li a{
+  color: #373737;
+}
+
+.archives li a{
+  text-transform: capitalize;
+}
+
+.archives li:nth-child(2),
+.archives li:nth-child(3),
+.archives li:nth-child(4){
+  border-bottom: 1px dotted #E1E1E1;
+  padding-bottom: 8px;
+  margin-bottom: 9px;
+}
+.about-us li p{
+  margin-bottom: 18px;
 }
 
 
+.mail::before{
+  content: '\f0e0';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 20px;
+  width: 30px;
+  height: 31px;
+  color: #ACACAC;
+}
 
+.call::before{
+  content: '\f095';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 25px;
+  width: 30px;
+  height: 31px;
+  color: #ACACAC;
+}
 
+.mobile::before{
+  content: '\f10b';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 35px;
+  width: 30px;
+  height: 31px;
+  color: #ACACAC;
+  box-sizing: border-box;
+  padding-left: 3px;
+  
+}
+
+form input{
+  height: 30px;
+  box-sizing: border-box;
+  border-style: none;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #EBEBEB;
+  font-size: 10px;
+  font-style: italic;
+  width: 100%;
+  margin-bottom: 7px;
+  outline: none;
+  padding-left: 10px;
+}
+
+form button{
+  background-color: #A0C63F;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  height: 30px;
+  border-style: none;
+  font-size: 10px;
+  padding: 0 11px;
+  float: right;
+  margin-top: 9px;
+}
+
+.facebook{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.facebook::before{
+  content: '\f09a';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 17px;
+  width: 16px;
+  height: 16px;
+  color: rgba(0,0,0,0.5);
+}
+
+.twitter,
+.wifi,
+.v,
+.people,
+.football{
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.twitter::before,
+.wifi::before,
+.v::before,
+.people::before,
+.football::before{
+  content: '\f099';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 17px;
+  width: 21px;
+  height: 16px;
+  color: rgba(0,0,0,0.5);
+}
+
+.footer-nav{
+  background-color: #202020;
+  align-items: center;
+  padding: 0 21.4%;
+  box-sizing: border-box;
+  height: 21px;
+  margin-top: 14px;
+  
+}
+
+.footer-nav a{
+  color:#FFFFFF;
+  font-size: 0.625rem;
+  text-transform: uppercase; 
+}
+
+.footer-nav .copyrights{
+  text-transform: capitalize;
+}
+
+.copyrights::before{
+  content: '\f1f9';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: left;
+  font-size: 8px;
+  padding-right: 2px;
+  padding-top: 1px;
+  color: white;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
