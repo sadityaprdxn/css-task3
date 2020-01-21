@@ -281,6 +281,9 @@ h2 span{
   letter-spacing: 1px;
 }
 
+.portfolio{
+  margin-bottom: 19px;
+}
 
 h3{
   font-size: 21px;
@@ -337,7 +340,6 @@ article a{
   height: 15px;
   font-size: 10px;
   text-transform: capitalize;
-  /* font-weight: bold; */
   box-sizing: border-box;
   padding: 2px 9px 0;
   margin-bottom: 9px;
@@ -349,6 +351,47 @@ article ul li:nth-child(3){
   line-height: 14.5px;
 }
 
+.advertisment{
+  padding-bottom: 42px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.advertisment>div{
+  position: relative;
+}
+
+.advertisment h3{
+  margin-bottom: 30px;
+}
+
+.advertisment ul{
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.angle-top{
+  text-indent: -9999px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.advertisment .angle-top::before{
+  content: '\f106';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 20px;
+  width: 31px;
+  height: 31px;
+  background-color: #A0C63F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+
 /*=================================
   main styling ends here
 =================================*/
@@ -358,7 +401,9 @@ article ul li:nth-child(3){
 =================================*/ 
 
 
-
+footer{
+  background-color: #FFFFFF;
+}
 
 
 
