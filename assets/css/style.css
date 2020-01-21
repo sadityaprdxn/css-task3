@@ -142,14 +142,10 @@ header>div a:nth-child(3){
 }
 
 header>div a:nth-child(3) .fa-bookmark{
-
   font-size:17px;
   margin-left: 6.8px;
   color: #A0C63F;
 }
-
-
-
 
 
 /*=================================
@@ -159,9 +155,74 @@ header>div a:nth-child(3) .fa-bookmark{
 /*=================================
   main styling starts here
 =================================*/
+.slider{
+  background-color:  #A0C63F;
+  position: relative;
+}
 
+.slide{
+  display: flex;
+  justify-content: space-between;
+}
 
+.slide figure img{
+  width: 400px;
+  height: 300px;
+  
+}
 
+.slide figure{
+  display: flex;
+  align-items: center;
+  padding: 19px 0;
+}
+
+.slide h2{
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  text-shadow: 0px 1px rgba(0,0,0,0.1);
+  text-align: center;
+  line-height: 33px;
+  padding-top: 62px;
+  font-weight: lighter;
+  word-spacing: -1px;
+  padding-left: 25px;
+}
+
+.slider>a{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #F8F8F8;
+  font-weight: 600;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 100%;
+  border: 5px solid #F8F8F8;
+}
+
+.fa-chevron-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 81px;
+  padding-bottom: 1.5px;
+  padding-top: 1.5px;
+  padding-right: 3px;
+}
+
+.fa-chevron-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 81px;
+  padding-bottom: 1.5px;
+  padding-top: 1.5px;
+  padding-left: 3px;
+}
 
 
 
