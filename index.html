@@ -31,7 +31,7 @@
 
   <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
 
@@ -202,7 +202,7 @@
       <!-- advertisment section start -->
       <section class="advertisment">
         <div class="wrapper">
-          <h3>our major advertisers</h3>
+          <h3>our major <span>advertisers</span></h3>
           <ul>
             <li>
               <figure><img src="https://via.placeholder.com/130x104" alt="Advertiser-one"></figure>
@@ -223,7 +223,7 @@
               <figure><img src="https://via.placeholder.com/130x104" alt="Advertiser-six"></figure>
             </li>
           </ul>
-          <a class="angle-top" href="#FIXME">Top arrow</a>
+          <a class="angle-top" href="#FIXME" title="Go up">Top arrow</a>
         </div>
       </section>
       <!-- advertisment section end -->
@@ -234,60 +234,53 @@
     <!--footer section start-->
     <footer> 
       <div class="wrapper">
-        <ul>
+        <ul class="about-us">
           <li>
-            <ul>
-              <li>
-                <h6>little about us</h6>
-                <p><strong>sed posuere</strong> consectetur est at. Nulla vitae elit libero, a pharetra. Lorem ipsum dolor sit amet, das conse <strong>ctetuer adipiscing elit.</strong></p>
-              </li>
-              <li>
-                <h6>follow us</h6>
-                <a class="facebook" href="#FIXME">facebook</a>
-                <a class="twitter" href="#FIXME">twitter</a>
-                <a class="wifi" href="#FIXME">wifi</a>
-                <a class="v" href="#FIXME">v</a>
-                <a class="football" href="#FIXME">football</a>
-                <a class="people" href="#FIXME">people</a>
-              </li>
-            </ul>
+            <h6>little about us</h6>
+            <p><strong>sed posuere</strong> consectetur est at. Nulla vitae elit libero, a pharetra. Lorem ipsum dolor sit amet, das conse <strong>ctetuer adipiscing elit.</strong></p>
           </li>
-
           <li>
-            <ul>
-              <li>
-                <h6>archives</h6>
-              </li>
-              <li><a href="#FIXME">march 2012</a></li>
-              <li><a href="#FIXME">february 2012</a></li>
-              <li><a href="#FIXME">january 2012</a></li>
-              <li><a href="#FIXME">december 2011</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <ul>
-              <li>
-                <h6>contact us</h6>
-              </li>
-              <li><a href="#FIXME" class="mail" title="Mail">info@premiumcoding.com</a></li>
-              <li><a href="#FIXME" class="call" title="Call">800 756 156</a></li>
-              <li><a href="#FIXME" class="mobile" title="Mobile">&#43;386408007561</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <form action="submit">
-              <h6>sign to newsletter</h6>
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email">
-              <button onclick="#">subscribe</button>
-            </form>
+            <h6>follow us</h6>
+            <a class="facebook" href="#FIXME">facebook</a>
+            <a class="twitter" href="#FIXME">twitter</a>
+            <a class="wifi" href="#FIXME">wifi</a>
+            <a class="v" href="#FIXME">v</a>
+            <a class="football" href="#FIXME">football</a>
+            <a class="people" href="#FIXME">people</a>
           </li>
         </ul>
+
+
+
+        <ul class="archives">
+          <li>
+            <h6>archives</h6>
+          </li>
+          <li><a href="#FIXME">march 2012</a></li>
+          <li><a href="#FIXME">february 2012</a></li>
+          <li><a href="#FIXME">january 2012</a></li>
+          <li><a href="#FIXME">december 2011</a></li>
+        </ul>
+
+        <ul class="contact-us">
+          <li>
+            <h6>contact us</h6>
+          </li>
+          <li><a href="#FIXME" class="mail" title="Mail">info@premiumcoding.com</a></li>
+          <li><a href="#FIXME" class="call" title="Call">800 756 156</a></li>
+          <li><a href="#FIXME" class="mobile" title="Mobile">&#43;386408007561</a></li>
+        </ul>
+
+        <form action="submit">
+          <h6>sign to newsletter</h6>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <button onclick="#">subscribe</button>
+        </form>
+    
       </div>
       
-      </div class="footer-nav">
+      <div class="footer-nav">
         <nav>
           <ul>
             <li><a href="#FIXME" title="Home">home</a></li>
@@ -296,11 +289,10 @@
             <li><a href="#FIXME" title="Home">contact</a></li>
           </ul>
         </nav>
-        <a href="#FIXME" title="Copyrights">2013 all rights reserved</a>
+        <a href="#FIXME" title="Copyrights" class="copyrights">2013 all rights reserved</a>
       </div>
     </footer>
     <!--footer section end-->
-
   </div>
   <!--container end-->
 
