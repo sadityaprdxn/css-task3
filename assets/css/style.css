@@ -85,6 +85,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #FDFDFD;
 }
 
 a { 
@@ -181,7 +182,8 @@ header>div a:nth-child(3) .fa-bookmark{
   font-size: 24px;
   text-transform: uppercase;
   color: #F8F8F8;
-  text-shadow: 0px 1px rgba(0,0,0,0.1);
+  /* text-shadow: 0px 1px rgba(0,0,0,0.1); */
+  text-shadow: 1px 0 1px rgba(0,0,0,0.3);
   text-align: center;
   line-height: 33px;
   padding-top: 62px;
@@ -225,8 +227,55 @@ header>div a:nth-child(3) .fa-bookmark{
 }
 
 
+h2{
+  font-size: 27px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: lighter;
+  color: #373737;
+}
 
+h2 span{
+  color:#A0C63F;
+}
 
+.welcome h2:first-child{
+  padding-top: 26px;
+  border-bottom: 1px dashed #E1E1E1;
+  padding-bottom: 25px;
+  margin-bottom: 33px;
+}
+
+.welcome ul{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.welcome ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.welcome ul figure img{
+  border-radius: 50%;
+  border: 15.5px solid rgba(0,0,0,0.3);
+  width: 112px;
+  height: 112px;
+  margin-bottom: 10px;
+}
+
+.welcome li h2 span{
+  color: #373737;
+  font-size: 12px;
+  display: block;
+  text-transform: capitalize;
+  padding-top: 2px;
+  letter-spacing: 1px;
+}
 
 /*=================================
   main styling ends here
